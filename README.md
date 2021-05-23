@@ -28,18 +28,18 @@ chmod +x main.py
 
 1. Search Keyboard 
 
-![Step 1](assets/step1.jpg)
+![Step 1](assets/step1.png)
 
 2. Go to Shortcuts Menu 
 
-![Step 2](assets/step2.jpg)
+![Step 2](assets/step2.png)
 
 3. Click Add 
 
-![Step 3](assets/step3.jpg)
+![Step 3](assets/step3.png)
 
 4. Type in the path where you installed shlol (the main.py file) and click OK
 
-![Step 4](assets/step4.jpg)
+![Step 4](assets/step4.png)
 
 5. Type in the sequence you want to use to open up shlol
