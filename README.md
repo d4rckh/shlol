@@ -1,11 +1,12 @@
 # SHLOL
 
-the best reverse shell generator you have ever seen
+This is a menu you can trigger with a keybind to do basic stuff for you
 
 - Really easy to use
 - Create listeners on the fly
 - No copy pasting needed
 - Choose the type, IP and PORT and you are done!
+- Run remote scripts easily
 
 ### Reverse Shell Generator
 
