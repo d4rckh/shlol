@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/35298550/119257747-47abd500-bbcf-11eb-
 # Installation
 
 ```diff
-- Make sure you have Python3 and Pip3 installed before proceeding to the installation process!
+- Make sure you have Python3, Pip3 and XTerm installed before proceeding to the installation process!
 ```
 
 ```bash
