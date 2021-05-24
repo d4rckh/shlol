@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+# SHLOL
 
-You can use the [editor on GitHub](https://github.com/d4rckh/shlol/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+the best reverse shell generator you have ever seen
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Really easy to use
+- Create listeners on the fly
+- No copy pasting needed
+- Choose the type, IP and PORT and you are done!
 
-### Markdown
+### Reverse Shell Generator
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+https://user-images.githubusercontent.com/35298550/119257747-47abd500-bbcf-11eb-934e-29ec617b9435.mp4
 
-```markdown
-Syntax highlighted code block
+### Easily serve scripts and run them remotely
 
-# Header 1
-## Header 2
-### Header 3
+https://user-images.githubusercontent.com/35298550/119358962-c8db9880-bcb1-11eb-853f-d88145d774b3.mp4
 
-- Bulleted
-- List
+# Installation
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```diff
+- Make sure you have Python3, Pip3 and XTerm installed before proceeding to the installation process!
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```bash
+# I recommend clonning it in the /opt directory!!
+# cd /opt
+git clone https://github.com/d4rckh/shlol
+cd shlol
+pip3 install -r requirements.txt
+chmod +x main.py
+```
 
-### Jekyll Themes
+# Post-Installation Steps
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/d4rckh/shlol/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Creating directories
 
-### Support or Contact
+- To serve scripts over the network easily using SHLOL you will need to create a new folder where you will place your scripts in: `~/.shlol/scripts`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Creating the keyboard shortcut
+
+### Kali Linux (XFCE) 
+
+1. Search Keyboard 
+
+![Step 1](assets/step1.png)
+
+2. Go to Shortcuts Menu 
+
+![Step 2](assets/step2.png)
+
+3. Click Add 
+
+![Step 3](assets/step3.png)
+
+4. Type in the path where you installed shlol (the main.py file) and click OK
+
+![Step 4](assets/step4.png)
+
+5. Type in the sequence you want to use to open up shlol
+
+# Are you looking for a really active red teaming community? join the red team lounge: https://discord.gg/68pqHX8UHZ
