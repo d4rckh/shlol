@@ -45,11 +45,10 @@ elif menu == "Run Remote Script (creates a web server)":
 		buildPrompt([], "WARNING: ~/.shlol/scripts NOT FOUND! PLEASE CREATE IT AND PUT YOUR SCRIPTS IN IT")
 	else:
 		onlyfiles = [f for f in listdir(f"{home}/.shlol/scripts") if isfile(join(f"{home}/.shlol/scripts", f))]
-		script = buildPrompt(onlyfiles, "What script to you want to serve?")
+		script = buildPrompt(onlyfiles, "What script do you want to serve?")
 		ip = buildPrompt([], "What's your IP?")
 		port = buildPrompt([], "What's your PORT (>1024 recommended)?")
 		copy(f"bash <(curl -s http://{ip}:{port}/{script})")
 		createServer = buildPrompt(["yes", "no"], "The command to run the file from your server has been copied. Do you want me to create a web server for you?( y/n )")
 		if createServer == "yes":
 			system(f"xterm -fa monaco -fs 13 -bg black -fg green -hold -e \"cd {home}/.shlol/scripts;python3 -m http.server {port}\"")	
-
