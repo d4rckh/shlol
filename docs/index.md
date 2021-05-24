@@ -9,11 +9,11 @@ the best reverse shell generator you have ever seen
 
 ### Reverse Shell Generator
 
-https://user-images.githubusercontent.com/35298550/119257747-47abd500-bbcf-11eb-934e-29ec617b9435.mp4
+[Click for video](https://user-images.githubusercontent.com/35298550/119257747-47abd500-bbcf-11eb-934e-29ec617b9435.mp4)
 
 ### Easily serve scripts and run them remotely
 
-https://user-images.githubusercontent.com/35298550/119358962-c8db9880-bcb1-11eb-853f-d88145d774b3.mp4
+[Click for video](https://user-images.githubusercontent.com/35298550/119358962-c8db9880-bcb1-11eb-853f-d88145d774b3.mp4)
 
 # Installation
 
