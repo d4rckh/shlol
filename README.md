@@ -57,3 +57,5 @@ chmod +x main.py
 ![Step 4](assets/step4.png)
 
 5. Type in the sequence you want to use to open up shlol
+
+# Are you looking for a really active red teaming community? join the red team lounge: https://discord.gg/68pqHX8UHZ
