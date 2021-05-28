@@ -1,2 +1,2 @@
 clipboard==0.0.4
-dmenu==0.2.1
+python-rofi==1.0.1
